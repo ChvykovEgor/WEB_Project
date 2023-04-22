@@ -19,10 +19,12 @@
                 <li class="mr-3"><a href="/search" class="text-white">Поиск</a></li>
                 <li class="mr-3"><a href="/about" class="text-white">О нас</a></li>
                 {% if current_user.is_authenticated %}
+                    <li class="mr-3"><a href="/create" class="text-white">Добавить рецепт</a></li>
                     <li class="mr-3"><a href="/edit" class="text-white">Профиль</a></li>
+                    <li class="mr-3"><a href="/logout" class="text-white">Выйти</a></li>
                 {% else %}
-                    <li class="mr-3"><a class="text-white" href="/register">Зарегистрироваться</a></li>
-                    <li class="mr-3"><a class="text-white" href="/login">Войти</a></li>
+                    <li class="mr-3"><a class="text-white" href="/register">Регистрация</a></li>
+                    <li class="mr-3"><a class="text-white" href="/login">Вход</a></li>
                 {% endif %}
             </ul>
         </nav>
